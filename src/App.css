@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#banner {
+    background-image: url('../src/logo.png');
+    /* background-color: green; */
+    width: 100%;
+    height: 180px;
+    background-position:center;
+    background-repeat:no-repeat;
+    /* background-attachment: fixed; */
+	/* background-size:cover; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#feed {
+    /* background-image: url('../src/ghibli.png');
+    background-position:center;
+	background-repeat:no-repeat;
+    background-size:cover;  
+    width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* hr {
+    width: 100%;
+    border: 5px solid black; 
+    margin: 0;   
+} */
+
+button {
+    border: 3px solid black;
+    margin: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.Feed-Container {
+    background-image: url(./Ghibli-Background-Attempt3.jpg);
+    background-attachment: fixed;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0;
+    margin-bottom: 10px
+}
+.Feed-Container-empty {
+    background-image: url(./Ghibli-Background-Attempt3.jpg);
+    background-attachment: fixed;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100em;
+    margin-top: 0;
+    margin-bottom: 10px
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#buttons {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 100px;
 }
+
+#page-header {
+background-color: #1469AA;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+color: black;
+position: fixed;
+top: 0;
+z-index: +1;
+}
+
+
+
